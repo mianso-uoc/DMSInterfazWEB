@@ -1,8 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<h1>Pieza<c:if test="${pieza.alarm ne null}">
-	<i class="bi bi-exclamation-triangle-fill text-danger"></i>
-</c:if></h1>
+<h1>Pieza</h1>
 
 <div class="card">
 	<div class="card-body">
@@ -16,7 +14,7 @@
 			<div class="col-2"><strong>Proyecto</strong></div>
 			<div class="col">${pieza.proyectoMaquina.proyecto.name}</div></div>
 		<div class="row">
-			<div class="col-2"><strong>Máquina</strong></div>
+			<div class="col-2"><strong>MÃ¡quina</strong></div>
 			<div class="col">${pieza.proyectoMaquina.maquina.serialNumber}</div>
 		</div>
 		<div class="row">
@@ -84,7 +82,7 @@ $(document).ready(function() {
                 borderWidth: 1
             },
             {
-                label: 'Límite superior',
+                label: 'LÃ­mite superior',
                 data: ${pieza.VLimiteSuperior},
                 backgroundColor: [
                     'rgba(100,100,100, 0.2)'
@@ -96,7 +94,7 @@ $(document).ready(function() {
                 borderWidth: 1
             },
             {
-                label: 'Límite inferior',
+                label: 'LÃ­mite inferior',
                 data: ${pieza.VLimiteInferior},
                 backgroundColor: [
                     'rgba(0, 0, 0, 0.2)'
@@ -164,7 +162,7 @@ $(document).ready(function() {
                 borderWidth: 1
             },
             {
-                label: 'Límite superior',
+                label: 'LÃ­mite superior',
                 data: ${pieza.ILimiteSuperior},
                 backgroundColor: [
                     'rgba(100,100,100, 0.2)'
@@ -176,7 +174,7 @@ $(document).ready(function() {
                 borderWidth: 1
             },
             {
-                label: 'Límite inferior',
+                label: 'LÃ­mite inferior',
                 data: ${pieza.ILimiteInferior},
                 backgroundColor: [
                     'rgba(100,100,100, 0.2)'
